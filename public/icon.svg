@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="50%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="bubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f0fdf4" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0f172a" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#grad)" />
+  
+  <!-- Speech bubble -->
+  <g filter="url(#shadow)">
+    <path d="M 120 150 C 120 110, 150 80, 200 80 L 312 80 C 362 80, 392 110, 392 150 L 392 270 C 392 310, 362 340, 312 340 L 220 340 L 150 400 L 165 340 L 200 340 C 150 340, 120 310, 120 270 Z" fill="url(#bubble)" />
+  </g>
+  
+  <!-- Sound waves & smiling face inside speech bubble -->
+  <g transform="translate(196, 150)">
+    <!-- Smile & rosy cheeks -->
+    <circle cx="20" cy="50" r="10" fill="#0d9488" />
+    <circle cx="100" cy="50" r="10" fill="#0d9488" />
+    <path d="M 35 75 Q 60 100 85 75" stroke="#0d9488" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="10" cy="70" r="8" fill="#f43f5e" opacity="0.4" />
+    <circle cx="110" cy="70" r="8" fill="#f43f5e" opacity="0.4" />
+    <!-- Cheerful star spark above -->
+    <path d="M 60 5 L 65 22 L 82 22 L 68 33 L 73 50 L 60 38 L 47 50 L 52 33 L 38 22 L 55 22 Z" fill="#f59e0b" />
+  </g>
+
+  <!-- Dynamic audio waves outside bubble -->
+  <path d="M 370 190 C 385 200, 385 220, 370 230" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" />
+  <path d="M 390 175 C 415 195, 415 225, 390 245" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" />
+</svg>

@@ -1,0 +1,10 @@
+{
+  "name": "LogopedPlus - Bolalar Nutqini Diagnostika Qilish va CRM Tizimi",
+  "description": "Logopedlar va ota-onalar uchun bolalar nutqiy rivojlanish darajasini aniqlovchi interaktiv testlar, avtomatik tahlil, elektron mijozlar bazasi va mobil ilova.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
